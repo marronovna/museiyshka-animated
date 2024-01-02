@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>museiyshka</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/icons8-movie.png">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body style="background-color:black; color: azure; user-select: none;">
+    <header>
+        <nav style="min-height: 100px;" class="navbar navbar-default p-3 text-light sm-col text-center">
+            <div class="container mt-3 mb-3 p-0">
+                <div class="navbar-brand text-light mb-0 p-3">
+                    <h1 style="color: rgb(247, 247, 247);"><span class="transfusion">M</span><span
+                            class="transfusion">U</span><span class="transfusion">S</span><span
+                            class="transfusion">E</span><span class="transfusion">I</span><span
+                            class="transfusion">U</span><span class="transfusion">S</span><span
+                            class="transfusion">H</span><span class="transfusion">K</span><span
+                            class="transfusion">A</span>
+                        <h1>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-link text-light pl-3 pr-3 pt-0 pb-0"
+                        style="text-decoration: none;" href="#cntct" onclick="slowScroll('#cntct')">
+                        <h4 class="hover" style="font-weight: 400;">Contacts</h4>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="headimg">
+        <img class="img-fluid" src="imgs/14.jpg" alt="headimg">
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="underheader text-light text-center">
+            <h1 style="color: violet; margin: 12px; letter-spacing: 8px;">Musei<span style="color: white;">yshka</span>
+            </h1>
+            <div class="typewriter">
+                <h5 style="color: rgba(255, 255, 255, 0.786); font-weight: 300; letter-spacing: 2px;"><span
+                        style="color: aquamarine;">F</span>oтoхудожня</h5>
+                <h5 style="color: rgba(255, 255, 255, 0.768); font-weight: 300; letter-spacing: 2px;">ма<span
+                        style="color: rgb(186 180 158);">j</span>стерня</h5>
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items: center;" class="tz-gallery col text-center">
+
+            <div class="thumbnail">
+                <a class="lightbox" href="imgs\1.JPG">
+                    <img class="img-fluid" src="imgs\1.JPG" alt="photo1">
+                </a>
+            </div>
+            <div class="thumbnail">
+                <a class="lightbox" href="imgs\2.jpg">
+                    <img src="imgs\2.jpg" alt="photo2">
+                </a>
+            </div>
+
+            <div class="thumbnail">
+                <a class="lightbox" href="imgs\3.jpg">
+                    <img src="imgs\3.jpg" alt="photo3">
+                </a>
+            </div>
+
+            <button class="btn btn-outline-light col text-center m-3 mt-3 p-3" onclick="showMore()">Show more</button>
+
+            <div id="example_2" style="border:1px solid black; display:none;">
+
+                <div class="thumbnail">
+                    <a class="lightbox" href="imgs\4.JPG">
+                        <img src="imgs\4.JPG" alt="photo4">
+                    </a>
+                </div>
+
+
+                <div class="thumbnail">
+                    <a class="lightbox" href="imgs\5.jpg">
+                        <img src="imgs\5.jpg" alt="photo5">
+                    </a>
+                </div>
+
+                <div class="thumbnail">
+                    <a class="lightbox" href="imgs\6.jpg">
+                        <img src="imgs\6.jpg" alt="photo6">
+                    </a>
+                </div>
+
+
+                <div class="thumbnail">
+                    <a class="lightbox" href="imgs\7.JPG">
+                        <img src="imgs\7.JPG" alt="photo7">
+                    </a>
+                </div>
+
+
+                <div class="thumbnail">
+                    <a class="lightbox" href="imgs\8.jpg">
+                        <img src="imgs\8.jpg" alt="photo8">
+                    </a>
+                </div>
+
+
+                <div class="thumbnail">
+                    <a class="lightbox" href="imgs\9.JPG">
+                        <img src="imgs\9.JPG" alt="photo9">
+                    </a>
+                </div>
+
+                <div class="thumbnail">
+                    <a class="lightbox" href="imgs\10.jpg">
+                        <img src="imgs\10.jpg" alt="photo10">
+                    </a>
+                </div>
+
+
+                <div class="thumbnail">
+                    <a class="lightbox" href="imgs\11.jpg">
+                        <img src="imgs\11.jpg" alt="photo11">
+                    </a>
+                </div>
+
+                <div class="thumbnail">
+                    <a class="lightbox" href="imgs\12.jpg">
+                        <img src="imgs\12.jpg" alt="photo12">
+                    </a>
+                </div>
+
+                <div class="thumbnail">
+                    <a class="lightbox" href="imgs\13.jpg">
+                        <img src="imgs\13.jpg" alt="photo13">
+                    </a>
+                </div>
+                <button class="btn btn-outline-light col text-center m-3 mt-3 p-3" onclick="hideElement()">Less</button>
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+    <div id="cntct" class="text-light text-center p-3 m-3">
+        <p>
+            <div class="typewriter" data-typewriter-id="2">
+                <h4 style="font-weight: 400; letter-spacing: 8px; user-select: none;">Contacts:</h4>
+            </div>
+        </p>
+        <h5 style="font-weight: 300;">tg: <a href="https://t.me/marronovna"
+                style="text-decoration: none; color: lightblue;">@museiushka</a></h5>
+        <h5 style="font-weight: 300;">ph: <a href="tel:+380632140341" style="text-decoration: none; color: lightblue;">
+                +380632140341</a><span> Maria</span></h5>
+    </div>
+    </div>
+    </div>
+
+
+    <footer class="bottom">
+
+        <nav style="width: 100%; min-height: 100px;"
+            class="navbar navbar-default p-3 d-flex flex-justify-content-space-between ">
+            <div class="container">
+                <span>© Kyiv 2022</span>
+                <a href="https://t.me/marronovna" class="p-3"><img style="height: 30px; width: auto; padding: 3px;"
+                        src="imgs/telegram.png"></a>
+            </div>
+        </nav>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+</body>
+
+</html>
